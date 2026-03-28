@@ -1,0 +1,16 @@
+version: "1.0.0"
+name: "safety-warden-v1"
+description: "Contextual safety evaluator focusing on reclaimed slang and subcultural endearment."
+entrypoint: "main:app"
+port: 7860
+
+tasks:
+  - id: "task_1"
+    name: "Standard Toxicity"
+    difficulty: "Easy"
+  - id: "task_2"
+    name: "Illegal Pharmacy Policy"
+    difficulty: "Medium"
+  - id: "task_3"
+    name: "Subcultural Reclaimed Slang"
+    difficulty: "Hard"
