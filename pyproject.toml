@@ -5,11 +5,18 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "safety-warden-v1"
 version = "0.1.0"
-description = "Contextual safety evaluator for the Meta PyTorch Hackathon."
+description = "Contextual safety evaluator"
 dependencies = [
     "fastapi",
     "uvicorn",
     "pydantic",
     "requests",
-    "openai"
+    "openai",
+    "openenv-core>=0.2.0"
 ]
+
+[project.scripts]
+server = "uvicorn:main"
+
+[tool.uv]
+managed = true
